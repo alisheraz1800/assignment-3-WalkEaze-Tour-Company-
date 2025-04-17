@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About WalkEaze</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-green-600">WalkEaza</h1>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="hover:text-green-600">Home</a></li>
+                    <li><a href="about.html" class="font-medium text-green-600 border-b-2 border-green-600 py-2">About</a></li>
+                    <li><a href="services.html" class="hover:text-green-600">Services</a></li>
+                    <li><a href="gallery.html" class="hover:text-green-600">Gallery</a></li>
+                    <li><a href="contact.html" class="hover:text-green-600">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="mobileMenuButton" class="md:hidden">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white py-4 px-4 border-t">
+            <ul class="space-y-3">
+                <li><a href="./index.html" class="block py-2 hover:text-green-600">Home</a></li>
+                <li><a href="./about.html" class="block py-2 font-medium text-green-600">About</a></li>
+                <li><a href="./services.html" class="block py-2 hover:text-green-600">Services</a></li>
+                <li><a href="./gallery.html" class="block py-2 hover:text-green-600">Gallery</a></li>
+                <li><a href="./contact.html" class="block py-2 hover:text-green-600">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-4 max-w-3xl">
+            <h2 class="text-3xl font-bold mb-8 text-center text-green-600">Our Story</h2>
+            <p class="mb-8">WalkEaza was founded in 2018 to help people connect with nature through walking.</p>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="text-center">
+                    <img src="/a1/sara.jpeg" class="rounded-full mx-auto mb-4" alt="Team">
+                    <h3 class="font-semibold">Sarah Johnson</h3>
+                    <p class="text-gray-600">Founder</p>
+                </div>
+                <div class="text-center">
+                    <img src="/a1/images.jpeg" class="rounded-full mx-auto mb-4" alt="Team">
+                    <h3 class="font-semibold">Michael Chen</h3>
+                    <p class="text-gray-600">Guide</p>
+                </div>
+                <div class="text-center">
+                    <img src="/a1/ema.jpg" class="rounded-full mx-auto mb-4" alt="Team">
+                    <h3 class="font-semibold">Emma Rodriguez</h3>
+                    <p class="text-gray-600">Coordinator</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2023 WalkEaze. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobileMenuButton').addEventListener('click', function() {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
